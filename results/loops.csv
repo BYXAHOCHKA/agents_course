@@ -1,0 +1,4 @@
+condition,expected,logged,loop_rate,success_rate,mean_steps,mean_tokens,steps_known,token_usage_known,unfinished
+empty,60,60,0.6666666666666666,0.0,8.0,4648.15,60,60,60
+guard,60,60,0.6,0.0,6.033333333333333,3316.3166666666666,60,60,20
+hint,60,60,0.5166666666666667,0.0,8.0,4860.766666666666,60,60,60

@@ -1,0 +1,51 @@
+[
+  {
+    "tool": "schedule_search",
+    "arguments": {
+      "handle": "main",
+      "date": "2026-10-19",
+      "group": "A",
+      "query": ""
+    },
+    "concise": {
+      "tokens": 68,
+      "text": "[{\"id\":1,\"date\":\"2026-10-19\",\"start\":\"09:00\",\"title\":\"Математика\"},{\"id\":2,\"date\":\"2026-10-19\",\"start\":\"11:00\",\"title\":\"Программирование\"}]"
+    },
+    "detailed": {
+      "tokens": 127,
+      "text": "[{\"id\":1,\"handle\":\"main\",\"date\":\"2026-10-19\",\"start\":\"09:00\",\"duration\":90,\"title\":\"Математика\",\"group_name\":\"A\",\"kind\":\"lecture\",\"room\":\"204\",\"teacher\":\"Иванова\"},{\"id\":2,\"handle\":\"main\",\"date\":\"2026-10-19\",\"start\":\"11:00\",\"duration\":90,\"title\":\"Программирование\",\"group_name\":\"A\",\"kind\":\"practice\",\"room\":\"305\",\"teacher\":\"Петров\"}]"
+    }
+  },
+  {
+    "tool": "schedule_get",
+    "arguments": {
+      "handle": "main",
+      "entry_id": 1
+    },
+    "concise": {
+      "tokens": 36,
+      "text": "[{\"id\":1,\"date\":\"2026-10-19\",\"start\":\"09:00\",\"title\":\"Математика\"}]"
+    },
+    "detailed": {
+      "tokens": 66,
+      "text": "[{\"id\":1,\"handle\":\"main\",\"date\":\"2026-10-19\",\"start\":\"09:00\",\"duration\":90,\"title\":\"Математика\",\"group_name\":\"A\",\"kind\":\"lecture\",\"room\":\"204\",\"teacher\":\"Иванова\"}]"
+    }
+  },
+  {
+    "tool": "schedule_free",
+    "arguments": {
+      "handle": "main",
+      "date": "2026-10-19",
+      "group": "A",
+      "duration": 60
+    },
+    "concise": {
+      "tokens": 35,
+      "text": "[{\"start\":\"08:00\",\"end\":\"09:00\"},{\"start\":\"12:30\",\"end\":\"20:00\"}]"
+    },
+    "detailed": {
+      "tokens": 69,
+      "text": "{\"date\":\"2026-10-19\",\"group\":\"A\",\"duration\":60,\"slots\":[{\"start\":\"08:00\",\"end\":\"09:00\",\"minutes\":60},{\"start\":\"12:30\",\"end\":\"20:00\",\"minutes\":450}]}"
+    }
+  }
+]

@@ -1,0 +1,10 @@
+{
+  "mcpServers": {
+    "schedule": {
+      "command": ".venv/bin/python",
+      "args": ["server.py"],
+      "protocolEra": "modern",
+      "env": {"SCHEDULE_DB": "tmp/inspector_journal.db"}
+    }
+  }
+}
